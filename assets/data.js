@@ -51,7 +51,7 @@ const TRIP = {
         {
           time: "—", sortMinutes: 15 * 60 + 30,
           title: "永旺AEON 來客夢店",
-          detail: "停留約2小時｜✦晚餐：2樓藏壽司　✦逛3COINS",
+          detail: "停留約2小時\n✦晚餐：2樓藏壽司\n✦逛3COINS",
           transport: "車程46分",
           address: "1番地 Raikamu, Kitanakagusuku, Nakagami District, Okinawa 901-2306",
           mapQuery: "AEON MALL Okinawa Rycom",
@@ -108,7 +108,7 @@ const TRIP = {
         {
           time: "10:50出發（停留到15:30）", sortMinutes: 10 * 60 + 50,
           title: "美麗海水族館（戶外買海豚餵食券）",
-          detail: "✦11:30海豚秀（11:45拍照）　✦15:00鯨鯊餵食　✦15:30海豚餵食　✦午餐：4樓「INOH」自助餐",
+          detail: "✦11:30海豚秀（11:45拍照）\n✦15:00鯨鯊餵食\n✦15:30海豚餵食\n✦午餐：4樓「INOH」自助餐",
           transport: "車程10分",
           address: "424 Ishikawa, Motobu, Kunigami District, Okinawa 905-0206",
           mapQuery: "沖縄美ら海水族館",
@@ -118,7 +118,7 @@ const TRIP = {
         {
           time: "—", sortMinutes: 16 * 60,
           title: "古宇利大橋",
-          detail: "✦星巴克 名護21世紀之森公園（停留約1小時）　✦咖啡 Cafe t&c Toraku",
+          detail: "✦星巴克 名護21世紀之森公園（停留約1小時）\n✦咖啡 Cafe t&c Toraku",
           transport: "車程36分",
           addresses: [
             { label: "星巴克 名護21世紀之森公園", address: "〒905-0011 Okinawa, Nago, Miyazato, 2-2-2", mapQuery: "星巴克 名護21世紀之森公園 Okinawa Nago Miyazato 2-2-2" },
@@ -191,7 +191,7 @@ const TRIP = {
         {
           time: "—", sortMinutes: 14 * 60,
           title: "琉球村",
-          detail: "營業到17:00｜✦14:00太鼓舞表演，Kijimuna劇場（きじむなぁ劇場）　✦14:30石獅子彩繪(門口)｜停留約1小時",
+          detail: "營業到17:00，停留約1小時\n✦14:00太鼓舞表演，Kijimuna劇場（きじむなぁ劇場）\n✦14:30石獅子彩繪(門口)",
           transport: "4分",
           address: "1130 Yamada, Onna, Kunigami District, Okinawa 904-0416",
           mapQuery: "琉球村",
@@ -212,7 +212,7 @@ const TRIP = {
         {
           time: "—", sortMinutes: 17 * 60 + 30,
           title: "美國村（逛街／晚餐）",
-          detail: "停留約2.5小時｜✦晚餐：The Calif Kitchen Okinawa 3樓（Taco Rice／鬆餅，有海景）",
+          detail: "停留約2.5小時\n✦晚餐：The Calif Kitchen Okinawa 3樓（Taco Rice／鬆餅，有海景）",
           transport: "車程3分",
           address: "Mihama, Chatan, Nakagami District, Okinawa 904-0115",
           mapQuery: "美國村 American Village Okinawa",

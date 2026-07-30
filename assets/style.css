@@ -439,7 +439,14 @@ section { padding: 56px 0; }
 }
 .stop-card.is-current .stop-time { background: var(--color-coral); color: #fff; }
 .stop-title { font-size: 17px; font-weight: 700; margin-bottom: 6px; color: var(--color-text); }
-.stop-detail { font-size: 14px; color: var(--color-text-muted); margin-bottom: 10px; white-space: pre-line; }
+.stop-detail {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-bottom: 10px;
+  white-space: pre-line;
+  line-height: 1.9;
+  word-break: break-word;
+}
 .stop-meta {
   display: flex; flex-wrap: wrap; gap: 8px 18px;
   font-size: 13px; color: var(--color-text-muted); margin-bottom: 10px;
@@ -741,4 +748,6 @@ section { padding: 56px 0; }
   .mobile-next-bar { display: flex; }
   .btn, .chip-btn { min-height: 44px; }
   section { padding: 40px 0; }
+  .stop-detail { font-size: 13.5px; line-height: 2; }
+  .stop-note { line-height: 1.8; }
 }
