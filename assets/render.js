@@ -402,12 +402,25 @@ function renderMedical() {
     sitesEl.innerHTML = m.searchSites.map(s => `<a class="chip-btn" href="${s.url}" target="_blank" rel="noopener">🔗 ${s.label}</a>`).join("");
   }
 
+  const legendEl = document.querySelector("#hospital-map-legend");
+  if (legendEl) {
+    legendEl.innerHTML = m.hospitals.map((h, i) => `
+      <div class="legend-item">
+        <span class="hospital-num">${i + 1}</span>
+        <span>${h.name.split("\n")[0]}</span>
+      </div>
+    `).join("");
+  }
+
   const hospEl = document.querySelector("#hospital-grid");
   if (hospEl) {
-    hospEl.innerHTML = m.hospitals.map(h => `
+    hospEl.innerHTML = m.hospitals.map((h, i) => `
       <div class="card">
         <div class="card-body">
-          <h3 style="white-space:pre-line;font-size:15px">${h.name}</h3>
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+            <span class="hospital-num">${i + 1}</span>
+            <h3 style="white-space:pre-line;font-size:15px;margin-bottom:0">${h.name}</h3>
+          </div>
           <div class="type">支援語言：${h.lang}${h.emergency24 === true ? "　｜　24小時急診" : h.emergency24 === false ? "　｜　非24小時急診" : ""}</div>
           ${h.note ? `<div class="note">${h.note}</div>` : ""}
           <div class="stop-address">📍 ${h.address}</div>

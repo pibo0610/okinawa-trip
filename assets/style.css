@@ -497,10 +497,25 @@ section { padding: 56px 0; }
   background: linear-gradient(135deg, var(--color-primary-light), var(--color-lagoon));
   position: relative;
   overflow: hidden;
-  display: flex; align-items: center; justify-content: center;
 }
-.card-media img { width: 100%; height: 100%; object-fit: cover; }
-.card-media .fallback-icon { font-size: 40px; color: rgba(255,255,255,.85); }
+.card-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.card-media .fallback-icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: rgba(255,255,255,.85);
+  z-index: 0;
+}
 .card-media .day-tag {
   position: absolute; top: 10px; left: 10px;
   background: rgba(255,255,255,.92);
@@ -650,6 +665,41 @@ section { padding: 56px 0; }
 .med-table tr:last-child td { border-bottom: none; }
 .simple-list { padding-left: 20px; margin: 0 0 8px; }
 .simple-list li { margin-bottom: 8px; font-size: 14px; color: var(--color-text-muted); }
+
+.hospital-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 24px; height: 24px; border-radius: 50%;
+  background: var(--color-primary); color: #fff;
+  font-size: 12px; font-weight: 800; flex-shrink: 0;
+}
+
+/* hospital location map */
+.hospital-map-wrap {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.hospital-map-wrap svg { width: 100%; height: auto; display: block; }
+.hospital-map-legend {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
+  font-size: 12.5px;
+  color: var(--color-text-muted);
+}
+.hospital-map-legend .legend-item { display: flex; align-items: center; gap: 8px; }
+.hospital-map-legend .hospital-num { flex-shrink: 0; }
+@media (max-width: 680px) {
+  .hospital-map-wrap { grid-template-columns: 1fr; }
+  .hospital-map-legend { grid-template-columns: 1fr; }
+}
 
 /* ---------------- Responsive table ---------------- */
 @media (max-width: 680px) {
