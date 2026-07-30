@@ -43,7 +43,12 @@ function mapsUrl(query) {
   return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(query);
 }
 function navUrl(query) {
-  return "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(query);
+  return "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(query) + "&travelmode=driving&dir_action=navigate";
+}
+
+function openMapLink(url) {
+  // 用同頁導向（而非window.open開新分頁）在手機上更容易正確喚起Google地圖／導航App
+  window.location.href = url;
 }
 
 function initMapButtons(scope) {
@@ -52,7 +57,7 @@ function initMapButtons(scope) {
     if (!q) return;
     el.addEventListener("click", (e) => {
       e.preventDefault();
-      window.open(mapsUrl(q), "_blank", "noopener");
+      openMapLink(mapsUrl(q));
     });
   });
   scope.querySelectorAll("[data-nav-query]").forEach(el => {
@@ -60,7 +65,7 @@ function initMapButtons(scope) {
     if (!q) return;
     el.addEventListener("click", (e) => {
       e.preventDefault();
-      window.open(navUrl(q), "_blank", "noopener");
+      openMapLink(navUrl(q));
     });
   });
 }
