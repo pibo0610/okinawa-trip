@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>沖繩自由行攻略｜10/25–10/28</title>
+<meta name="description" content="沖繩自由行完整攻略：每日時間軸、住宿、景點、美食、交通與 Google Maps 導航一次搞定。">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="flag">🌺</span>沖繩自由行</a>
+    <nav class="main-nav">
+      <a href="index.html">首頁</a>
+      <a href="day01.html">Day1</a>
+      <a href="day02.html">Day2</a>
+      <a href="day03.html">Day3</a>
+      <a href="day04.html">Day4</a>
+      <a href="hotel.html">住宿</a>
+      <a href="attractions.html">景點</a>
+      <a href="food.html">美食</a>
+      <a href="traffic.html">交通</a>
+      <a href="medical.html">沖繩醫療</a>
+    </nav>
+    <button class="nav-toggle" aria-label="選單">☰</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <span class="hero-eyebrow">10/25（日）— 10/28（三）・租車自駕</span>
+    <h1>沖繩自由行，四天三夜的<br>海與藍。</h1>
+    <p class="lead">從波上宮到古宇利大橋，從美麗海水族館到美國村——這是我們一起規劃的完整行程，每一站都附上地址、導航與備註，滑開手機就能直接出發。</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="day01.html">查看 Day1 行程 →</a>
+      <button class="btn btn-ghost" data-print>🖨️ 列印／存成PDF</button>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="section-head">
+      <h2>每日行程</h2>
+      <span class="sub">點選任一天，查看完整時間軸與地圖導航</span>
+    </div>
+    <div class="day-grid" id="day-grid"><!-- JS render --></div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="widget-grid">
+      <div class="widget-card">
+        <h3>📍 現在行程</h3>
+        <div id="next-up-widget"><!-- JS render --></div>
+      </div>
+      <div class="widget-card">
+        <h3>💴 日圓匯率速算</h3>
+        <div class="converter-row">
+          <label for="conv-twd">台幣</label>
+          <input id="conv-twd" type="text" inputmode="decimal" placeholder="TWD">
+        </div>
+        <div class="converter-row">
+          <label for="conv-jpy">日圓</label>
+          <input id="conv-jpy" type="text" inputmode="decimal" placeholder="JPY">
+        </div>
+        <div class="converter-rate" id="conv-rate-label"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="widget-card">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+        <h3 style="margin-bottom:0">✅ 出發前 Checklist</h3>
+        <span class="checklist-progress" id="checklist-progress"></span>
+      </div>
+      <div class="checklist-toggle-wrap">
+        <button class="btn btn-outline btn-sm" id="checklist-toggle">展開出發前 Checklist ▼</button>
+      </div>
+      <div class="checklist-groups" id="checklist-groups"><!-- JS render --></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="section-head">
+      <h2>快速導覽</h2>
+      <span class="sub">住宿・景點・美食・交通</span>
+    </div>
+    <div class="day-grid">
+      <a class="day-card" href="hotel.html"><div class="num">🏨</div><h3>住宿</h3><p>2間飯店・Check-in／停車資訊</p></a>
+      <a class="day-card" href="attractions.html"><div class="num">🏝️</div><h3>景點</h3><p>全行程景點地圖與官網</p></a>
+      <a class="day-card" href="food.html"><div class="num">🍽️</div><h3>美食</h3><p>訂位時間與菜單連結</p></a>
+      <a class="day-card" href="traffic.html"><div class="num">🚗</div><h3>交通</h3><p>航班・租車・還車資訊</p></a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>🌺 沖繩自由行</h4>
+      <p style="font-size:13px;color:rgba(255,255,255,.7)">10/25（日）～10/28（三）・租車自駕・沖繩藍</p>
+    </div>
+    <div>
+      <h4>行程</h4>
+      <a href="day01.html">Day1</a>
+      <a href="day02.html">Day2</a>
+      <a href="day03.html">Day3</a>
+      <a href="day04.html">Day4</a>
+    </div>
+    <div>
+      <h4>資訊</h4>
+      <a href="hotel.html">住宿</a>
+      <a href="attractions.html">景點</a>
+      <a href="food.html">美食</a>
+      <a href="traffic.html">交通</a>
+      <a href="medical.html">沖繩醫療</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>沖繩自由行攻略</span>
+    <button class="btn btn-ghost btn-sm no-print" data-print>🖨️ 列印／存成PDF</button>
+  </div>
+</footer>
+
+<script>const PAGE_TYPE = "index";</script>
+<script src="assets/data.js"></script>
+<script src="assets/render.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>

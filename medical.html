@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>沖繩醫療｜沖繩自由行</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="flag">🌺</span>沖繩自由行</a>
+    <nav class="main-nav">
+      <a href="index.html">首頁</a>
+      <a href="day01.html">Day1</a>
+      <a href="day02.html">Day2</a>
+      <a href="day03.html">Day3</a>
+      <a href="day04.html">Day4</a>
+      <a href="hotel.html">住宿</a>
+      <a href="attractions.html">景點</a>
+      <a href="food.html">美食</a>
+      <a href="traffic.html">交通</a>
+      <a href="medical.html">沖繩醫療</a>
+    </nav>
+    <button class="nav-toggle" aria-label="選單">☰</button>
+  </div>
+</header>
+
+<section class="hero hero-day-hero">
+  <div class="container">
+    <span class="hero-eyebrow">沖繩醫療 Medical Guide</span>
+    <h1>萬一不舒服，這裡都幫你準備好了。</h1>
+    <p class="lead">緊急聯絡、常備藥物、日文醫療用詞、提供外語服務的醫院列表，出發前先看一遍最安心。</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="section-head"><h2>🚨 緊急聯絡</h2></div>
+    <div id="emergency-block"><!-- JS render --></div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="widget-grid">
+      <div class="widget-card">
+        <h3>🧼 旅遊期間衛生防護建議</h3>
+        <ul class="simple-list" id="hygiene-list"></ul>
+      </div>
+      <div class="widget-card">
+        <h3>🤒 萬一感染流感時的應對措施</h3>
+        <ul class="simple-list" id="illness-list"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="section-head"><h2>💊 常備藥物建議</h2><span class="sub">僅供參考，體質因人而異</span></div>
+    <div id="medicine-table"><!-- JS render --></div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="section-head"><h2>🈺 日文醫療常用詞對照</h2></div>
+    <div id="terms-table"><!-- JS render --></div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="section-head"><h2>🔍 醫院查詢網站</h2></div>
+    <div class="btn-row" id="search-sites" style="margin-bottom:24px"></div>
+
+    <div class="section-head"><h2>🏥 提供外語服務的醫院</h2></div>
+    <div class="card-grid" id="hospital-grid"><!-- JS render --></div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div id="hotline-block"><!-- JS render --></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>🌺 沖繩自由行</h4>
+      <p style="font-size:13px;color:rgba(255,255,255,.7)">10/25（日）～10/28（三）・租車自駕・沖繩藍</p>
+    </div>
+    <div>
+      <h4>行程</h4>
+      <a href="day01.html">Day1</a>
+      <a href="day02.html">Day2</a>
+      <a href="day03.html">Day3</a>
+      <a href="day04.html">Day4</a>
+    </div>
+    <div>
+      <h4>資訊</h4>
+      <a href="hotel.html">住宿</a>
+      <a href="attractions.html">景點</a>
+      <a href="food.html">美食</a>
+      <a href="traffic.html">交通</a>
+      <a href="medical.html">沖繩醫療</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>沖繩自由行攻略</span>
+    <button class="btn btn-ghost btn-sm no-print" data-print>🖨️ 列印／存成PDF</button>
+  </div>
+</footer>
+
+<script>const PAGE_TYPE = "medical";</script>
+<script src="assets/data.js"></script>
+<script src="assets/render.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
