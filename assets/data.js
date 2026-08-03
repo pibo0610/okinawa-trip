@@ -206,16 +206,20 @@ const TRIP = {
           title: "Araha Park 安良波公園（海盜船）",
           detail: "停留約1小時",
           transport: "車程30分",
-          address: "2-21 Chatan, Nakagami District, Okinawa 904-0116",
-          mapQuery: "Araha Park 2-21 Chatan, Nakagami District, Okinawa 904-0116"
+          addresses: [
+            { label: "安良波公園 中央の駐車場", address: "2 Chome-21 Chatan, Nakagami District, Okinawa 904-0116", mapQuery: "安良波公園 中央駐車場 2 Chome-21 Chatan, Nakagami District, Okinawa 904-0116" }
+          ]
         },
         {
           time: "—", sortMinutes: 17 * 60 + 30,
           title: "美國村（逛街／晚餐）",
           detail: "停留約2.5小時\n✦晚餐：The Calif Kitchen Okinawa 3樓（Taco Rice／鬆餅，有海景）",
           transport: "車程3分",
-          address: "Mihama, Chatan, Nakagami District, Okinawa 904-0115",
-          mapQuery: "美國村 American Village Okinawa",
+          addresses: [
+            { label: "Depot Island 停車場（最近）", address: "8Q84+G3 北谷町 日本沖繩縣", mapQuery: "8Q84+G3 北谷町 沖繩縣" },
+            { label: "北谷町美濱公共停車場（好停）", address: "8Q75+X5 北谷町 日本沖繩縣", mapQuery: "8Q75+X5 北谷町 沖繩縣" },
+            { label: "AEON 北谷店停車場（最空）", address: "8Q75+J4 北谷町 日本沖繩縣", mapQuery: "8Q75+J4 北谷町 沖繩縣" }
+          ],
           note: "預約 10/27（二）17:30｜永旺 北谷店：玩具店在2樓 VILLAGE VANGUARD",
           links: [{ label: "訂位頁面", url: "https://tabelog.com/tw/okinawa/A4703/A470304/47019840/" }]
         },
