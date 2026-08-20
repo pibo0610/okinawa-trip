@@ -213,6 +213,41 @@ p { margin: 0 0 1em; }
 }
 .hero-day-hero .meal-strip b { display:block; font-size: 11px; opacity: .8; font-weight:600; margin-bottom:2px;}
 
+/* ---------------- Collage Hero (照片拼貼底圖) ---------------- */
+.hero.collage-hero {
+  background: var(--color-primary);
+  position: relative;
+  overflow: hidden;
+}
+.collage-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: repeat(var(--collage-cols, 6), 1fr);
+  grid-template-rows: repeat(var(--collage-rows, 1), 1fr);
+}
+.collage-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.collage-gradient {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(15,76,92,.55) 0%, rgba(15,76,92,.72) 55%, rgba(15,76,92,.88) 100%);
+}
+.hero.collage-hero .container { position: relative; z-index: 2; }
+
+@media (max-width: 760px) {
+  .collage-bg {
+    grid-template-columns: repeat(var(--collage-cols-mobile, var(--collage-cols, 3)), 1fr);
+    grid-template-rows: repeat(var(--collage-rows-mobile, var(--collage-rows, 1)), 1fr);
+  }
+}
+
 /* ---------------- Buttons ---------------- */
 .btn {
   display: inline-flex;
