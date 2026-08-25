@@ -55,7 +55,7 @@ const TRIP = {
           transport: "車程46分",
           address: "1番地 Raikamu, Kitanakagusuku, Nakagami District, Okinawa 901-2306",
           mapQuery: "AEON MALL Okinawa Rycom",
-          note: "—永旺在AEON STYLE旁（收據抬頭上有AEON）\n—其他品牌在另一個櫃台（1樓 Village A區）BLUE SEAL旁邊轉角繞進去\n1F：3COINS、UNIQLO、GU、H&M、寶可夢中心、BicCamera藥妝、DAISO\n2F：PLAZA、GAP、NEW ERA、Global Work、久世福商店、AEON STYLE超市\n3F：BicCamera電器、SKECHERS、Crocs、flying tiger\n4F：三麗鷗商店、橡子共和國、BREEZE童裝、Mother Garden(木製玩具)、寶寶反斗城\n美食：Kijimuna塔可飯、藏壽司、拉麵魁力屋、串家物語、JUMBO STEAK HAN'S",
+          note: "—永旺在AEON STYLE旁（收據抬頭上有AEON）\n—其他品牌在另一個櫃台（1樓 Village A區）BLUE SEAL旁邊轉角繞進去\n1F：3COINS、UNIQLO、GU、H&M、寶可夢中心、BicCamera藥妝、DAISO\n2F：PLAZA、GAP、NEW ERA、Global Work、久世福商店、AEON STYLE超市\n3F：BicCamera電器、SKECHERS、Crocs、flying tiger\n4F：三麗鷗商店、橡子共和國、BREEZE童裝、Mother Garden(木製玩具)、寶寶反斗城\n美食：Kijimuna塔可飯、藏壽司、拉麵魁力屋、串家物語、JUMBO STEAK HAN'S\n👶 嬰兒用品：4樓 AEON STYLE嬰兒用品專區（キッズ共和国／兒童共和國），或2樓大型超市區，可直接買到「和光堂赤ちゃんの純水」或當地超軟水",
           links: [
             { label: "優惠券", url: "https://tw.aeonmall.global/mall/okinawarycom/coupons" },
             { label: "服務台500日圓折價券", url: "https://tw.aeonmall.global/coupons/discount?mall=mall52&couponid=22" }
@@ -110,10 +110,15 @@ const TRIP = {
           title: "美麗海水族館（戶外買海豚餵食券）",
           detail: "✦11:30海豚秀（11:45拍照）\n✦15:00鯨鯊餵食\n✦15:30海豚餵食\n✦午餐：4樓「INOH」自助餐",
           transport: "車程10分",
-          address: "424 Ishikawa, Motobu, Kunigami District, Okinawa 905-0206",
-          mapQuery: "沖縄美ら海水族館",
-          note: "海豚秀：10:30/11:30/13:00/15:00/17:00\n與海豚合照：11:45/13:15/15:15（每次約15分鐘）\n鯨鯊餵食：15:00/17:00\n海豚餵食：10:00/11:00/13:30/15:30（售完為止，戶外海豚潟湖）\n黑潮探險：9:00-10:45、17:30-18:15",
-          links: [{ label: "官方網站", url: "https://churaumi.okinawa/" }]
+          addresses: [
+            { label: "水族館停車場 P7", address: "MVVH+4Q 本部町 日本沖繩縣", mapQuery: "MVVH+4Q 本部町 沖繩縣" }
+          ],
+          note: "海豚秀：10:30/11:30/13:00/15:00/17:00\n與海豚合照：11:45/13:15/15:15（每次約15分鐘）\n鯨鯊餵食：15:00/17:00\n海豚餵食：10:00/11:00/13:30/15:30（售完為止，戶外海豚潟湖）\n黑潮探險：9:00-10:45、17:30-18:15\n\n🅿️ P7停車場：免費｜必須由海洋博公園「北閘口（北ゲート）」進入才能到達，其他閘口無法抵達\n👶 哺乳室：水族館入口（3樓）及美麗海劇場前（2樓），備有沙發椅與熱水器方便沖泡牛奶",
+          links: [
+            { label: "官方網站", url: "https://churaumi.okinawa/" },
+            { label: "交通指南", url: "https://churaumi.okinawa/sp/tc/guide/access/" },
+            { label: "幼兒服務設施", url: "https://churaumi.okinawa/sp/tc/guide/baby/" }
+          ]
         },
         {
           time: "—", sortMinutes: 16 * 60,
@@ -195,7 +200,7 @@ const TRIP = {
           transport: "4分",
           address: "1130 Yamada, Onna, Kunigami District, Okinawa 904-0416",
           mapQuery: "琉球村",
-          note: "石獅子彩繪2隻：4,200日圓",
+          note: "石獅子彩繪2隻：4,200日圓\n👶 1樓設有專用育嬰哺乳室（授乳室）",
           links: [
             { label: "官方網站", url: "https://www.ryukyumura.co.jp/" },
             { label: "石獅子彩繪預約", url: "https://book.ryukyumura.co.jp/products/84f78ba7-5a9f-5a50-a344-c9a253076ab6?lng=ja-JP" }
@@ -220,7 +225,7 @@ const TRIP = {
             { label: "北谷町美濱公共停車場（好停）", address: "8Q75+X5 北谷町 日本沖繩縣", mapQuery: "8Q75+X5 北谷町 沖繩縣" },
             { label: "AEON 北谷店停車場（最空）", address: "8Q75+J4 北谷町 日本沖繩縣", mapQuery: "8Q75+J4 北谷町 沖繩縣" }
           ],
-          note: "預約 10/27（二）17:30｜永旺 北谷店：玩具店在2樓 VILLAGE VANGUARD",
+          note: "預約 10/27（二）17:30｜永旺 北谷店：玩具店在2樓 VILLAGE VANGUARD\n👶 The Calif Kitchen Okinawa 設有專用育嬰哺乳室與幼兒遊戲區",
           links: [{ label: "訂位頁面", url: "https://tabelog.com/tw/okinawa/A4703/A470304/47019840/" }]
         },
         {
@@ -318,11 +323,15 @@ const TRIP = {
 
   attractions: [
     { day: 1, name: "波上宮", stay: "約30分鐘", address: "波上宮 一之鳥居前停車場　1 Chome-25-11 Wakasa, Naha, Okinawa 900-0031", mapQuery: "波上宮 Naminoue Shrine", website: "http://naminouegu.jp/", hero: "images/naminoue-shrine.webp", note: "" },
-    { day: 2, name: "美麗海水族館", stay: "停留到15:30", address: "424 Ishikawa, Motobu, Kunigami District, Okinawa 905-0206", mapQuery: "沖縄美ら海水族館", website: "https://churaumi.okinawa/", hero: "images/churaumi-aquarium.webp", note: "海豚秀：10:30/11:30/13:00/15:00/17:00｜鯨鯊餵食：15:00/17:00" },
+    { day: 2, name: "美麗海水族館", stay: "停留到15:30", address: "424 Ishikawa, Motobu, Kunigami District, Okinawa 905-0206", mapQuery: "沖縄美ら海水族館", website: "https://churaumi.okinawa/", hero: "images/churaumi-aquarium.webp", note: "海豚秀：10:30/11:30/13:00/15:00/17:00｜鯨鯊餵食：15:00/17:00\n👶 哺乳室：水族館入口（3樓）及美麗海劇場前（2樓），備有沙發椅與熱水器",
+      parking: [
+        { label: "水族館停車場 P7（免費，須由北閘口進入）", address: "MVVH+4Q 本部町 日本沖繩縣", mapQuery: "MVVH+4Q 本部町 沖繩縣" }
+      ]
+    },
     { day: 2, name: "瀨底島 玻璃獨木舟", stay: "約1小時", address: "沖繩縣國頭郡本部町瀨底（瀨底大橋橋下）", mapQuery: "沖繩縣國頭郡本部町Sesoko 2631-1", website: "https://anchi-beach-oms-sesoko.com/marine-menu-rental/", hero: "images/sesoko-kayak.webp", note: "9:40出發，30分鐘課程" },
     { day: 2, name: "古宇利大橋", stay: "自由停留", address: "沖繩縣國頭郡今歸仁村古宇利", mapQuery: "古宇利大橋", website: "", hero: "images/kouri-bridge.webp", note: "沿途星巴克、Cafe t&c Toraku" },
     { day: 3, name: "CAVE OKINAWA鐘乳石", stay: "約30分鐘", address: "479-1 Ishikawa Kadekaru, Uruma, Okinawa 904-1114", mapQuery: "CAVE OKINAWA 479-1 Ishikawa Kadekaru, Uruma, Okinawa 904-1114", website: "https://www.cave.okinawa/", hero: "images/cave-okinawa.webp", note: "" },
-    { day: 3, name: "琉球村", stay: "約1小時", address: "1130 Yamada, Onna, Kunigami District, Okinawa 904-0416", mapQuery: "琉球村", website: "https://www.ryukyumura.co.jp/", hero: "images/ryukyu-mura.webp", note: "14:00太鼓舞表演｜石獅子彩繪體驗4,200日圓" },
+    { day: 3, name: "琉球村", stay: "約1小時", address: "1130 Yamada, Onna, Kunigami District, Okinawa 904-0416", mapQuery: "琉球村", website: "https://www.ryukyumura.co.jp/", hero: "images/ryukyu-mura.webp", note: "14:00太鼓舞表演｜石獅子彩繪體驗4,200日圓\n👶 1樓設有專用育嬰哺乳室（授乳室）" },
     { day: 3, name: "Araha Park 安良波公園", stay: "約1小時", address: "2-21 Chatan, Nakagami District, Okinawa 904-0116", mapQuery: "Araha Park 2-21 Chatan, Nakagami District, Okinawa 904-0116", website: "", hero: "images/araha-park.webp", note: "海盜船遊具，適合親子",
       parking: [
         { label: "安良波公園 中央の駐車場", address: "2 Chome-21 Chatan, Nakagami District, Okinawa 904-0116", mapQuery: "安良波公園 中央駐車場 2 Chome-21 Chatan, Nakagami District, Okinawa 904-0116" }
@@ -344,7 +353,7 @@ const TRIP = {
     { day: 2, name: "Yakiniku Kochan", type: "燒肉單點", address: "1219-163 Biimata, Nago, Okinawa 905-0005", mapQuery: "Yakiniku Kochan Nago", reservation: "10/26（一）18:15", reservationUrl: "https://tabelog.com/tw/okinawa/A4702/A470201/47012349/", hero: "images/yakiniku-kochan.webp" },
     { day: 3, name: "浜の家海鮮料理", type: "海鮮料理", address: "2097 Nakadomari, Onna, Kunigami District, Okinawa 904-0415", mapQuery: "浜の家海鮮料理 2097 Nakadomari, Onna, Kunigami District, Okinawa 904-0415", reservation: "", note: "炸豬腳、海膽焗烤龍蝦（半隻龍蝦）4,290日圓", reservationUrl: "https://www.kaisen-hamanoya.jp/food#nav06", hero: "images/hamanoya.webp" },
     { day: 3, name: "崎濱製麺", type: "蕎麥麵", address: "847 Yamada, Onna, Kunigami District, Okinawa 904-0416", mapQuery: "崎濱製麺 847 Yamada, Onna, Kunigami District, Okinawa 904-0416", reservation: "", hero: "images/sakihama-noodles.webp" },
-    { day: 3, name: "The Calif Kitchen Okinawa", type: "美式／夏威夷風，Taco Rice／鬆餅", address: "美國村 3樓　Mihama, Chatan, Nakagami District, Okinawa 904-0115", mapQuery: "The Calif Kitchen Okinawa American Village", reservation: "10/27（二）17:30", reservationUrl: "https://tabelog.com/tw/okinawa/A4703/A470304/47019840/", hero: "images/calif-kitchen.webp" },
+    { day: 3, name: "The Calif Kitchen Okinawa", type: "美式／夏威夷風，Taco Rice／鬆餅", address: "美國村 3樓　Mihama, Chatan, Nakagami District, Okinawa 904-0115", mapQuery: "The Calif Kitchen Okinawa American Village", reservation: "10/27（二）17:30", note: "👶 設有專用育嬰哺乳室與幼兒遊戲區", reservationUrl: "https://tabelog.com/tw/okinawa/A4703/A470304/47019840/", hero: "images/calif-kitchen.webp" },
     { day: 4, name: "國際通牧志市場", type: "市場小吃", address: "那霸市牧志　國際通", mapQuery: "牧志公設市場", reservation: "", hero: "images/kokusai-street.webp" }
   ],
 
