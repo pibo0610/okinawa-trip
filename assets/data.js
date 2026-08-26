@@ -55,7 +55,7 @@ const TRIP = {
           transport: "車程46分",
           address: "1番地 Raikamu, Kitanakagusuku, Nakagami District, Okinawa 901-2306",
           mapQuery: "AEON MALL Okinawa Rycom",
-          note: "—永旺在AEON STYLE旁（收據抬頭上有AEON）\n—其他品牌在另一個櫃台（1樓 Village A區）BLUE SEAL旁邊轉角繞進去\n1F：3COINS、UNIQLO、GU、H&M、寶可夢中心、BicCamera藥妝、DAISO\n2F：PLAZA、GAP、NEW ERA、Global Work、久世福商店、AEON STYLE超市\n3F：BicCamera電器、SKECHERS、Crocs、flying tiger\n4F：三麗鷗商店、橡子共和國、BREEZE童裝、Mother Garden(木製玩具)、寶寶反斗城\n美食：Kijimuna塔可飯、藏壽司、拉麵魁力屋、串家物語、JUMBO STEAK HAN'S\n👶 嬰兒用品：4樓 AEON STYLE嬰兒用品專區（キッズ共和国／兒童共和國），或2樓大型超市區，可直接買到「和光堂赤ちゃんの純水」或當地超軟水\n👶 育嬰室（Baby Room）：位於2樓、3樓、4樓（4樓有兩間）\n\n💴 500日圓折價券：1樓旅遊信息中心可直接索取，或使用線上QR碼折價券（兩種管道都可以）\n\n🧾 退稅說明：\n1. 店內可直接退稅（左邊藍色標誌）\n2. 須集中到服務台退稅（右邊綠色標誌）：1樓 Village A區（BLUE SEAL冰淇淋店旁轉角繞進去）的 GLOBAL TAX FREE 集中退稅櫃檯辦理，最後辦理時間為晚上21:50\n3. AEON STYLE店家有自己的集中退稅櫃台（發票抬頭AEON），在2、3樓辦理，範圍包含1樓生鮮超市、藥妝土產，以及2至4樓自營服飾與婦嬰用品",
+          note: "—永旺在AEON STYLE旁（收據抬頭上有AEON）\n—其他品牌在另一個櫃台（1樓 Village A區）BLUE SEAL旁邊轉角繞進去\n1F：3COINS、UNIQLO、GU、H&M、寶可夢中心、BicCamera藥妝、DAISO\n2F：PLAZA、GAP、NEW ERA、Global Work、久世福商店、AEON STYLE超市\n3F：BicCamera電器、SKECHERS、Crocs、flying tiger\n4F：三麗鷗商店、橡子共和國、BREEZE童裝、Mother Garden(木製玩具)、寶寶反斗城\n美食：Kijimuna塔可飯、藏壽司、拉麵魁力屋、串家物語、JUMBO STEAK HAN'S\n👶 嬰兒用品：4樓 AEON STYLE嬰兒用品專區（キッズ共和国／兒童共和國），或2樓大型超市區，可直接買到「和光堂赤ちゃんの純水」或當地超軟水\n👶 育嬰室（Baby Room）：位於2樓、3樓、4樓（4樓有兩間）\n\n💴 500日圓折價券：1樓旅遊信息中心可直接索取；或請至服務櫃檯出示此QR碼，即可兌換500日圓優惠券\n\n🧾 退稅說明：\n1. 店內可直接退稅（左邊藍色標誌）\n2. 須集中到服務台退稅（右邊綠色標誌）：1樓 Village A區（BLUE SEAL冰淇淋店旁轉角繞進去）的 GLOBAL TAX FREE 集中退稅櫃檯辦理，最後辦理時間為晚上21:50\n3. AEON STYLE店家有自己的集中退稅櫃台（發票抬頭AEON），在2、3樓辦理，範圍包含1樓生鮮超市、藥妝土產，以及2至4樓自營服飾與婦嬰用品",
           refImages: [
             { src: "images/aeon-tax-free-info-1.webp", alt: "AEON MALL Okinawa Rycom 退稅資訊看板" },
             { src: "images/aeon-tax-free-info-2.webp", alt: "AEON STYLE 退稅注意事項公告（現場手寫更新，請以現場標示為準）" }
@@ -127,10 +127,10 @@ const TRIP = {
         {
           time: "—", sortMinutes: 16 * 60,
           title: "古宇利大橋",
-          detail: "✦星巴克 名護21世紀之森公園（停留約1小時）\n✦咖啡 Cafe t&c Toraku",
+          detail: "✦星巴克 名護21世紀之森公園（停留約1小時）\n✦咖啡 Cafe t&c Toraku\n✦鯨鯊主題大型遊樂設施",
           transport: "車程36分",
           addresses: [
-            { label: "星巴克 名護21世紀之森公園", address: "〒905-0011 Okinawa, Nago, Miyazato, 2-2-2", mapQuery: "星巴克 名護21世紀之森公園 Okinawa Nago Miyazato 2-2-2" },
+            { label: "公園免費停車場", address: "2-chōme-2 Miyazato, Nago, Okinawa 905-0011日本", mapQuery: "2-chōme-2 Miyazato, Nago, Okinawa 905-0011" },
             { label: "Cafe t&c Toraku", address: "1882-10 Kouri, Nakijin, Kunigami District, Okinawa 905-0406", mapQuery: "Cafe t&c Toraku 1882-10 Kouri, Nakijin, Kunigami District, Okinawa 905-0406" }
           ],
           mapQuery: "古宇利大橋"
@@ -229,7 +229,7 @@ const TRIP = {
             { label: "北谷町美濱公共停車場（好停）", address: "8Q75+X5 北谷町 日本沖繩縣", mapQuery: "8Q75+X5 北谷町 沖繩縣" },
             { label: "AEON 北谷店停車場（最空）", address: "8Q75+J4 北谷町 日本沖繩縣", mapQuery: "8Q75+J4 北谷町 沖繩縣" }
           ],
-          note: "預約 10/27（二）17:30\n永旺 北谷店：玩具店在2樓 VILLAGE VANGUARD\n👶 The Calif Kitchen Okinawa 設有專用育嬰哺乳室與幼兒遊戲區",
+          note: "✦永旺 北谷店：玩具店在2樓 VILLAGE VANGUARD\n✦預約 10/27（二）17:30晚餐 The Calif Kitchen Okinawa\n👶設有專用育嬰哺乳室與幼兒遊戲區",
           links: [{ label: "訂位頁面", url: "https://tabelog.com/tw/okinawa/A4703/A470304/47019840/" }]
         },
         {
