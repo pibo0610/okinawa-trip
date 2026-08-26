@@ -127,10 +127,11 @@ const TRIP = {
         {
           time: "—", sortMinutes: 16 * 60,
           title: "古宇利大橋",
-          detail: "✦星巴克 名護21世紀之森公園（停留約1小時）\n✦咖啡 Cafe t&c Toraku\n✦鯨鯊主題大型遊樂設施",
+          detail: "✦15分鐘就能環島一圈\n✦Tinu海灘(心形岩)\n✦GREAT EGRET COFFEE(外帶咖啡餐車在心形岩旁)\n✦咖啡 Cafe t&c Toraku(家庭咖啡)\n✦Gajumaru Rock(法式吐司)",
           transport: "車程36分",
           addresses: [
-            { label: "公園免費停車場", address: "2-chōme-2 Miyazato, Nago, Okinawa 905-0011日本", mapQuery: "2-chōme-2 Miyazato, Nago, Okinawa 905-0011" },
+            { label: "心形岩 Tinu海灘", address: "2 Kouri, Nakijin, Kunigami District, Okinawa 905-0406日本", mapQuery: "2 Kouri, Nakijin, Kunigami District, Okinawa 905-0406" },
+            { label: "GREAT EGRET COFFEE", address: "2570 Kouri, Nakijin, Kunigami District, Okinawa 905-0406日本", mapQuery: "GREAT EGRET COFFEE 2570 Kouri, Nakijin, Kunigami District, Okinawa 905-0406" },
             { label: "Cafe t&c Toraku", address: "1882-10 Kouri, Nakijin, Kunigami District, Okinawa 905-0406", mapQuery: "Cafe t&c Toraku 1882-10 Kouri, Nakijin, Kunigami District, Okinawa 905-0406" }
           ],
           mapQuery: "古宇利大橋"
