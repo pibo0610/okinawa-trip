@@ -46,6 +46,19 @@ function renderAddressBlock(stop) {
   `;
 }
 
+function renderRefImages(stop) {
+  if (!stop.refImages || !stop.refImages.length) return "";
+  return `
+    <div class="stop-ref-images">
+      ${stop.refImages.map(img => `
+        <a href="${img.src}" target="_blank" rel="noopener" class="stop-ref-img">
+          <img src="${img.src}" alt="${esc(img.alt || "")}" loading="lazy">
+        </a>
+      `).join("")}
+    </div>
+  `;
+}
+
 function renderStopCard(stop, isCurrent) {
   const detailBlock = stop.detail ? `<div class="stop-detail">${stop.detail}</div>` : "";
   const noteBlock = stop.note ? `<div class="stop-note">${stop.note}</div>` : "";
@@ -62,6 +75,7 @@ function renderStopCard(stop, isCurrent) {
         ${transportChip ? `<div class="stop-meta">${transportChip}</div>` : ""}
         ${renderAddressBlock(stop)}
         ${noteBlock}
+        ${renderRefImages(stop)}
         ${linksRow ? `<div class="stop-actions">${linksRow}</div>` : ""}
       </div>
     </div>

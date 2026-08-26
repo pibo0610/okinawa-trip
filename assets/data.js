@@ -55,7 +55,11 @@ const TRIP = {
           transport: "車程46分",
           address: "1番地 Raikamu, Kitanakagusuku, Nakagami District, Okinawa 901-2306",
           mapQuery: "AEON MALL Okinawa Rycom",
-          note: "—永旺在AEON STYLE旁（收據抬頭上有AEON）\n—其他品牌在另一個櫃台（1樓 Village A區）BLUE SEAL旁邊轉角繞進去\n1F：3COINS、UNIQLO、GU、H&M、寶可夢中心、BicCamera藥妝、DAISO\n2F：PLAZA、GAP、NEW ERA、Global Work、久世福商店、AEON STYLE超市\n3F：BicCamera電器、SKECHERS、Crocs、flying tiger\n4F：三麗鷗商店、橡子共和國、BREEZE童裝、Mother Garden(木製玩具)、寶寶反斗城\n美食：Kijimuna塔可飯、藏壽司、拉麵魁力屋、串家物語、JUMBO STEAK HAN'S\n👶 嬰兒用品：4樓 AEON STYLE嬰兒用品專區（キッズ共和国／兒童共和國），或2樓大型超市區，可直接買到「和光堂赤ちゃんの純水」或當地超軟水",
+          note: "—永旺在AEON STYLE旁（收據抬頭上有AEON）\n—其他品牌在另一個櫃台（1樓 Village A區）BLUE SEAL旁邊轉角繞進去\n1F：3COINS、UNIQLO、GU、H&M、寶可夢中心、BicCamera藥妝、DAISO\n2F：PLAZA、GAP、NEW ERA、Global Work、久世福商店、AEON STYLE超市\n3F：BicCamera電器、SKECHERS、Crocs、flying tiger\n4F：三麗鷗商店、橡子共和國、BREEZE童裝、Mother Garden(木製玩具)、寶寶反斗城\n美食：Kijimuna塔可飯、藏壽司、拉麵魁力屋、串家物語、JUMBO STEAK HAN'S\n👶 嬰兒用品：4樓 AEON STYLE嬰兒用品專區（キッズ共和国／兒童共和國），或2樓大型超市區，可直接買到「和光堂赤ちゃんの純水」或當地超軟水\n👶 育嬰室（Baby Room）：位於2樓、3樓、4樓（4樓有兩間）\n\n💴 500日圓折價券：1樓旅遊信息中心可直接索取，或使用線上QR碼折價券（兩種管道都可以）\n\n🧾 退稅說明：\n1. 店內可直接退稅（左邊藍色標誌）\n2. 須集中到服務台退稅（右邊綠色標誌）：1樓 Village A區（BLUE SEAL冰淇淋店旁轉角繞進去）的 GLOBAL TAX FREE 集中退稅櫃檯辦理，最後辦理時間為晚上21:50\n3. AEON STYLE店家有自己的集中退稅櫃台（發票抬頭AEON），在2、3樓辦理，範圍包含1樓生鮮超市、藥妝土產，以及2至4樓自營服飾與婦嬰用品",
+          refImages: [
+            { src: "images/aeon-tax-free-info-1.webp", alt: "AEON MALL Okinawa Rycom 退稅資訊看板" },
+            { src: "images/aeon-tax-free-info-2.webp", alt: "AEON STYLE 退稅注意事項公告（現場手寫更新，請以現場標示為準）" }
+          ],
           links: [
             { label: "優惠券", url: "https://tw.aeonmall.global/mall/okinawarycom/coupons" },
             { label: "服務台500日圓折價券", url: "https://tw.aeonmall.global/coupons/discount?mall=mall52&couponid=22" }
@@ -225,7 +229,7 @@ const TRIP = {
             { label: "北谷町美濱公共停車場（好停）", address: "8Q75+X5 北谷町 日本沖繩縣", mapQuery: "8Q75+X5 北谷町 沖繩縣" },
             { label: "AEON 北谷店停車場（最空）", address: "8Q75+J4 北谷町 日本沖繩縣", mapQuery: "8Q75+J4 北谷町 沖繩縣" }
           ],
-          note: "預約 10/27（二）17:30｜永旺 北谷店：玩具店在2樓 VILLAGE VANGUARD\n👶 The Calif Kitchen Okinawa 設有專用育嬰哺乳室與幼兒遊戲區",
+          note: "預約 10/27（二）17:30\n永旺 北谷店：玩具店在2樓 VILLAGE VANGUARD\n👶 The Calif Kitchen Okinawa 設有專用育嬰哺乳室與幼兒遊戲區",
           links: [{ label: "訂位頁面", url: "https://tabelog.com/tw/okinawa/A4703/A470304/47019840/" }]
         },
         {
@@ -235,7 +239,7 @@ const TRIP = {
           transport: "車程1小時",
           address: "2-16-1 Makishi, Naha, Okinawa 900-0013（那霸市牧志2丁目16番1號）｜電話 +81-98-861-8700",
           mapQuery: "JR九州Blossom那霸酒店",
-          note: "退房：~11:00｜加購早餐成人2,640日圓 x2\n停車每晚1,500日圓（住宿期間可無限次進出）\n飯店主入口位於置屋通（Okiei-dori），可於此卸行李",
+          note: "退房：~11:00｜加購早餐成人2,640日圓 x2\n停車每晚1,500日圓（住宿期間可無限次進出）\n飯店主入口位於置屋通（Okiei-dori），可於此卸行李\n🚰 前台後方設有飲水機（冷／熱）",
           links: [
             { label: "官方網站", url: "https://www.jrk-hotels.co.jp/tw/Naha/" },
             { label: "停車資訊", url: "https://www.jrk-hotels.co.jp/Naha/access/#lnk_parking" }
@@ -313,7 +317,7 @@ const TRIP = {
       phone: "+81-98-861-8700",
       parking: "每晚1,500日圓（住宿期間可無限次進出）",
       breakfast: "可加購早餐，成人2,640日圓 x2",
-      note: "飯店主入口位於置屋通（Okiei-dori），可於此卸行李",
+      note: "飯店主入口位於置屋通（Okiei-dori），可於此卸行李\n🚰 前台後方設有飲水機（冷／熱）",
       website: "https://www.jrk-hotels.co.jp/tw/Naha/",
       parkingUrl: "https://www.jrk-hotels.co.jp/Naha/access/#lnk_parking",
       email: "naha@jrk-hotels.co.jp",
