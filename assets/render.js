@@ -65,6 +65,7 @@ function renderStopCard(stop, isCurrent) {
   const transportChip = (stop.transport && stop.transport !== "—")
     ? `<span class="meta-item">🚗 ${stop.transport}</span>` : "";
   const linksRow = renderLinkChips(stop);
+  const leaveBadge = stop.leaveTime ? `<div class="stop-leave-badge">⏰ ${stop.leaveTime}</div>` : "";
 
   return `
     <div class="timeline-item ${isCurrent ? "is-current" : ""}">
@@ -73,6 +74,7 @@ function renderStopCard(stop, isCurrent) {
         <div class="stop-title">${stop.title}</div>
         ${detailBlock}
         ${transportChip ? `<div class="stop-meta">${transportChip}</div>` : ""}
+        ${leaveBadge}
         ${renderAddressBlock(stop)}
         ${noteBlock}
         ${renderRefImages(stop)}

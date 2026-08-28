@@ -129,6 +129,7 @@ const TRIP = {
           title: "古宇利大橋",
           detail: "✦15分鐘就能環島一圈\n✦Tinu海灘(心形岩)\n✦GREAT EGRET COFFEE(外帶咖啡餐車在心形岩旁)\n✦咖啡 Cafe t&c Toraku(家庭咖啡)\n✦Gajumaru Rock(法式吐司)",
           transport: "車程36分",
+          leaveTime: "17:30 開車離開",
           addresses: [
             { label: "心形岩 Tinu海灘", address: "2 Kouri, Nakijin, Kunigami District, Okinawa 905-0406日本", mapQuery: "2 Kouri, Nakijin, Kunigami District, Okinawa 905-0406" },
             { label: "GREAT EGRET COFFEE", address: "2570 Kouri, Nakijin, Kunigami District, Okinawa 905-0406日本", mapQuery: "GREAT EGRET COFFEE 2570 Kouri, Nakijin, Kunigami District, Okinawa 905-0406" },
@@ -216,6 +217,7 @@ const TRIP = {
           title: "Araha Park 安良波公園（海盜船）",
           detail: "停留約1小時",
           transport: "車程30分",
+          leaveTime: "17:00 開車離開",
           addresses: [
             { label: "安良波公園 中央の駐車場", address: "2 Chome-21 Chatan, Nakagami District, Okinawa 904-0116", mapQuery: "安良波公園 中央駐車場 2 Chome-21 Chatan, Nakagami District, Okinawa 904-0116" }
           ]

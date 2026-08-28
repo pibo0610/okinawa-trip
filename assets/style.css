@@ -505,6 +505,20 @@ section { padding: 56px 0; }
 }
 .stop-actions { display: flex; flex-wrap: wrap; gap: 8px; }
 
+.stop-leave-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 800;
+  color: #fff;
+  background: var(--color-coral);
+  padding: 7px 14px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 14px rgba(242,164,136,.4);
+}
+
 .stop-ref-images {
   display: flex;
   gap: 10px;
