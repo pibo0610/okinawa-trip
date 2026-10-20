@@ -133,7 +133,7 @@ function renderIndexDayGrid() {
   const el = document.querySelector("#day-grid");
   if (!el) return;
   const state = getTripState();
-  const outfitColor = { "粉紅": "#F2A488", "藍色": "#4FA9C7", "白色": "#B9C9CE" };
+  const outfitColor = { "粉紅": "#F2A488", "藍色": "#4FA9C7", "白色": "#B9C9CE", "黑色": "#2B2B2E" };
 
   el.innerHTML = TRIP.days.map(day => {
     const isToday = state.status === "during" && state.day.id === day.id;
